@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            background-color: white;
+        }
+        form{
+            margin: 30px auto;
+            width: 60%;
+            height: 50%;
+        }
+        form h1{
+            text-align: center;
+        }
+        #nama,#npm,#alamat{
+            margin-top: 5px;
+            padding: 9px 10px;
+            width: 60em;
+            border-radius: 3px;
+            border: 1px solid black;
+        }
+        #jurusan{
+            padding: 6px 10px;
+            width: 61em;
+            border-radius: 3px;
+            border: 1px solid black;
+        }
+        .separator{
+            margin-bottom: 20px;
+        }
+        .btn{
+            padding: 8px 15px;
+            background-color: royalblue;
+            border: 1px solid royalblue;
+            color: white;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: padding 1s;
+        }
+        .btn:hover{
+            background-color: transparent;
+            border: 1px solid royalblue;
+            color: royalblue;
+            padding: 8px 20px;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" method="post">
+        <h1>Pendaftaran Mahasiswa Baru</h1>
+        <label for="npm" class="lb1">NPM (Nomor Pokok Mahasiswa)</label><br>
+        <input type="text" id="npm" name="npm" required>
+        <div class="separator"></div>
+        <label for="nama" class="lb2">Nama Lengkap</label><br>
+        <input type="text" id="nama" name="nama" required>
+        <div class="separator"></div>
+        <label for="alamat" class="lb3">Alamat</label> <br>
+        <textarea name="alamat" id="alamat" cols="30" rows="4" required></textarea>
+        <div class="separator"></div>
+        <label for="jk" class="lb4">Jenis Kelamin</label><br>
+        <input type="radio" name="jk" id="jk" value="Laki-laki">Laki-laki<br>
+        <input type="radio" name="jk" id="jk" value="Perempuan">Perempuan
+        <div class="separator"></div>
+        <label for="prodi" class="lb5">Program Studi</label><br>
+        <select name="jurusan" id="jurusan">
+            <option value="Teknik Informatika">Teknik Informatika</option>
+            <option value="Teknik Mesin">Teknik Mesin</option>
+            <option value="Teknik Industri">Teknik Industri</option>
+        </select>
+        <div class="separator"></div>
+        <input type="submit" value="Tambah" class="btn">
+    </form>
+</body>
+</html>
